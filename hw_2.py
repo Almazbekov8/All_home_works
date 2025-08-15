@@ -17,3 +17,9 @@ class Classmate(Person):
         print(f"Привет, меня зовут {self.name}, я одноклассник Игоря, "
               f"я родился {self.birth_date}, работаю {self.occupation.lower()}.")
 
+
+friend = Friend(name="Азирет", birth_date="5.12.2000", occupation="Программист", higher_education=True)
+friend.introduce()
+
+classmate = Classmate(name="Адилет", birth_date="5.12.2000", occupation="Программист", higher_education=True)
+classmate.introduce()

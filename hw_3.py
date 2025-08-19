@@ -36,5 +36,10 @@ class Classmate(Person):
         self.group = group
 
     def introduce(self):
-        print(f"Привет, меня зовут {self.name}, я одноклассник Игоря, "
-              f"я родился {self.birth_date}, работаю {self.occupation.lower()}.")
+        edu_text = "У меня есть высшее образование." if self.higher_education else "У меня нет высшего образование"
+        print(f"Привет, меня зовут {self.name}. "
+              f"Я одноклассник Игоря. "
+              f"Я родился {self.birth_date}. Работаю {self.occupation.lower()}. "
+              f"Я учился с Игорем в группе {self.group}. "
+              f"{edu_text}")
+

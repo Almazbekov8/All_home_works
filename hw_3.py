@@ -15,6 +15,11 @@ class Person:
 
 
 class Friend(Person):
+    def __init__(self, name, birth_date, occupation, higher_education, hobby):
+        super().__init__(name, birth_date, occupation, higher_education)
+        self.hobby = hobby
+
+
     def introduce(self):
         print(f"Привет, меня зовут {self.name}, я друг Игоря, "
               f"я родился {self.birth_date}, работаю {self.occupation.lower()}.")

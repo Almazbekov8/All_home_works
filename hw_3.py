@@ -43,3 +43,8 @@ class Classmate(Person):
               f"Я учился с Игорем в группе {self.group}. "
               f"{edu_text}")
 
+cl1 = Classmate("Иван", "20.02.2000", "студент", True, "11D")
+cl1.introduce()
+
+fr1 = Friend("Айбек", "20.02.2000", "студент", True, "футбол")
+fr1.introduce()

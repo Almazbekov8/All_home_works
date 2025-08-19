@@ -20,8 +20,13 @@ class Friend(Person):
         self.hobby = hobby
 
     def introduce(self):
-        print(f"Привет, меня зовут {self.name}, я друг Игоря, "
-              f"я родился {self.birth_date}, работаю {self.occupation.lower()}.")
+        edu_text = "У меня есть высшее образование." if self.higher_education else "У меня нет высшего образование"
+        print(f"Привет, меня зовут {self.name}. "
+              f" Я друг Игоря. "
+              f"Я родился {self.birth_date}. Работаю {self.occupation.lower()}. "
+              f"Мое любимое хобби {self.hobby.lower()}."
+              f"{edu_text}")
+
 
 
 

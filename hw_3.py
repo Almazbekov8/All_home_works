@@ -19,7 +19,6 @@ class Friend(Person):
         super().__init__(name, birth_date, occupation, higher_education)
         self.hobby = hobby
 
-
     def introduce(self):
         print(f"Привет, меня зовут {self.name}, я друг Игоря, "
               f"я родился {self.birth_date}, работаю {self.occupation.lower()}.")
@@ -27,6 +26,10 @@ class Friend(Person):
 
 
 class Classmate(Person):
+    def __init__(self, name, birth_date, occupation, higher_education, group):
+        super().__init__(name, birth_date, occupation, higher_education)
+        self.group = group
+
     def introduce(self):
         print(f"Привет, меня зовут {self.name}, я одноклассник Игоря, "
               f"я родился {self.birth_date}, работаю {self.occupation.lower()}.")
